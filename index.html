@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenhouse Gases</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Learn about different greenhouse gases and their impact on our planet. Explore detailed information on Carbon Dioxide, Methane, Nitrous Oxide, Fluorinated Gases, and more.">
+    <meta name="keywords" content="Greenhouse Gases, Carbon Dioxide, Methane, Nitrous Oxide, Fluorinated Gases, Climate Change, Water Vapor, Ozone, Carbon Monoxide, Sulfur Dioxide, Black Carbon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Greenhouse Gases</h1>
+        <p>Learn about the different greenhouse gases and their impact on our planet.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="cards-container">
+            <!-- Existing Cards -->
+            
+            <!-- Card 1: Carbon Dioxide -->
+            <div class="card" onclick="openModal('co2-modal')">
+                <div class="card-image" style="background-image: url('https://img.freepik.com/free-photo/view-green-forest-trees-with-co2_23-2149675039.jpg');"></div>
+                <div class="card-content">
+                    <h2>Carbon Dioxide (CO₂)</h2>
+                    <p>Released through natural processes and human activities, such as burning fossil fuels.</p>
+                </div>
+            </div>
+
+            <!-- Card 2: Methane -->
+            <div class="card" onclick="openModal('methane-modal')">
+                <div class="card-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmAn1818kIwVZGsWQYVuLnTJHp1y9H1lgl0OnHdU9AhX7rMjJ6C6wMvPt-akvgdLf-iM8&usqp=CAU');"></div>
+                <div class="card-content">
+                    <h2>Methane (CH₄)</h2>
+                    <p>Emitted during the production and transport of coal, oil, and natural gas.</p>
+                </div>
+            </div>
+
+            <!-- Card 3: Nitrous Oxide -->
+            <div class="card" onclick="openModal('nitrous-oxide-modal')">
+                <div class="card-image" style="background-image: url('https://cdn5.vectorstock.com/i/1000x1000/64/24/n2o-nitrous-oxide-molecule-vector-9216424.jpg');"></div>
+                <div class="card-content">
+                    <h2>Nitrous Oxide (N₂O)</h2>
+                    <p>Released from agricultural and industrial activities, as well as combustion of fossil fuels.</p>
+                </div>
+            </div>
+
+            <!-- Card 4: Fluorinated Gases -->
+            <div class="card" onclick="openModal('fluorinated-gases-modal')">
+                <div class="card-image" style="background-image: url('https://cdn.prod.website-files.com/60240caa334e1e0b95466505/6501d84dd3c8e1a8fbdebef6_GES_Article_7_FR.png');"></div>
+                <div class="card-content">
+                    <h2>Fluorinated Gases</h2>
+                    <p>Synthetic gases used in various industrial applications with high global warming potential.</p>
+                </div>
+            </div>
+
+            <!-- New Cards -->
+
+            <!-- Card 5: Water Vapor -->
+            <div class="card" onclick="openModal('water-vapor-modal')">
+                <div class="card-image" style="background-image: url('https://png.pngtree.com/background/20230614/original/pngtree-the-molecules-are-floating-on-the-surface-of-the-water-picture-image_3525677.jpg');"></div>
+                <div class="card-content">
+                    <h2>Water Vapor (H₂O)</h2>
+                    <p>The most abundant greenhouse gas, playing a key role in Earth's climate system.</p>
+                </div>
+            </div>
+
+            <!-- Card 6: Ozone -->
+            <div class="card" onclick="openModal('ozone-modal')">
+                <div class="card-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLqXZyp6IztvwHsqwz4ylI4V1ySjJmynfvqQ&s');"></div>
+                <div class="card-content">
+                    <h2>Ozone (O₃)</h2>
+                    <p>A greenhouse gas found in both the troposphere and stratosphere, with different impacts.</p>
+                </div>
+            </div>
+
+            <!-- Card 7: Carbon Monoxide -->
+            <div class="card" onclick="openModal('carbon-monoxide-modal')">
+                <div class="card-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZFiAA4DyVKeeOaqCqDT3TECbvMgxNBphlww&s');"></div>
+                <div class="card-content">
+                    <h2>Carbon Monoxide (CO)</h2>
+                    <p>A colorless, odorless gas that indirectly affects the greenhouse effect.</p>
+                </div>
+            </div>
+
+            <!-- Card 8: Sulfur Dioxide -->
+            <div class="card" onclick="openModal('sulfur-dioxide-modal')">
+                <div class="card-image" style="background-image: url('https://cdn2.vectorstock.com/i/1000x1000/65/56/so2-sulfur-dioxide-molecule-vector-9216556.jpg');"></div>
+                <div class="card-content">
+                    <h2>Sulfur Dioxide (SO₂)</h2>
+                    <p>Produced by volcanic eruptions and industrial processes, contributing to climate change.</p>
+                </div>
+            </div>
+
+            <!-- Card 9: Black Carbon -->
+            <div class="card" onclick="openModal('black-carbon-modal')">
+                <div class="card-image" style="background-image: url('https://www.shutterstock.com/shutterstock/photos/672555799/display_1500/stock-vector-black-icon-in-flat-style-of-carbon-molecules-organic-compound-chemical-element-web-logo-vector-672555799.jpg');"></div>
+                <div class="card-content">
+                    <h2>Black Carbon</h2>
+                    <p>Particulate matter that absorbs sunlight, contributing to atmospheric warming.</p>
+                </div>
+            </div>
+                <!-- New Cards -->
+
+<!-- Card 10: Chlorofluorocarbons (CFCs) -->
+<div class="card" onclick="openModal('cfc-modal')">
+    <div class="card-image" style="background-image: url('https://pwonlyias.com/wp-content/uploads/2023/08/Untitled-design-6.png');"></div>
+    <div class="card-content">
+        <h2>Chlorofluorocarbons (CFCs)</h2>
+        <p>Synthetic compounds used in refrigeration, air conditioning, and aerosol propellants.</p>
+    </div>
+</div>
+
+<!-- Card 11: Hydrofluorocarbons (HFCs) -->
+<div class="card" onclick="openModal('hfc-modal')">
+    <div class="card-image" style="background-image: url('https://www.shutterstock.com/image-illustration/greenhouse-gases-group-compounds-that-600nw-702137899.jpg');"></div>
+    <div class="card-content">
+        <h2>Hydrofluorocarbons (HFCs)</h2>
+        <p>Synthetic gases used as refrigerants, blowing agents, and in fire protection systems.</p>
+    </div>
+</div>
+
+<!-- Card 12: Perfluorocarbons (PFCs) -->
+<div class="card" onclick="openModal('pfc-modal')">
+    <div class="card-image" style="background-image: url('https://www.researchgate.net/publication/333839998/figure/fig1/AS:843697717522433@1578164619049/Fig-2-Perfluorocarbons-Classification-Perfluorodecalin-A-Perfluorotrypropylamine.png');"></div>
+    <div class="card-content">
+        <h2>Perfluorocarbons (PFCs)</h2>
+        <p>Used in aluminum production, semiconductor manufacturing, and as solvents.</p>
+    </div>
+</div>
+
+<!-- Card 13: Sulfur Hexafluoride (SF₆) -->
+<div class="card" onclick="openModal('sf6-modal')">
+    <div class="card-image" style="background-image: url('https://www.shutterstock.com/image-illustration/sulfur-hexafluoride-sf6-inorganic-colorless-260nw-1062149339.jpg');"></div>
+    <div class="card-content">
+        <h2>Sulfur Hexafluoride (SF₆)</h2>
+        <p>Used as an insulating gas in electrical equipment and in the magnesium industry.</p>
+    </div>
+</div>
+
+<!-- Card 14: Nitrogen Trifluoride (NF₃) -->
+<div class="card" onclick="openModal('nf3-modal')">
+    <div class="card-image" style="background-image: url('https://www.vedantu.com/question-sets/4ba220b0-3709-4159-8b3c-58b463c18fe84975487212021397684.png');"></div>
+    <div class="card-content">
+        <h2>Nitrogen Trifluoride (NF₃)</h2>
+        <p>Used in the manufacturing of liquid crystal displays and photovoltaic cells.</p>
+    </div>
+</div>
+
+<!-- Card 15: Hydrochlorofluorocarbons (HCFCs) -->
+<div class="card" onclick="openModal('hcfc-modal')">
+    <div class="card-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFTC_m_GLTxUxlqUN0eD_Fterr-J2WnP65Dg&s');"></div>
+    <div class="card-content">
+        <h2>Hydrochlorofluorocarbons (HCFCs)</h2>
+        <p>Used as transitional substitutes for CFCs in refrigeration and air conditioning.</p>
+    </div>
+</div>
+
+<!-- Card 16: Hydrofluoroolefins (HFOs) -->
+<div class="card" onclick="openModal('hfo-modal')">
+    <div class="card-image" style="background-image: url('https://www.researchgate.net/publication/341009861/figure/fig2/AS:885645929095170@1588165852248/Molecular-structures-of-a-R1234yf-b-R1234zez-c-R134a-and-d-R32.jpg');"></div>
+    <div class="card-content">
+        <h2>Hydrofluoroolefins (HFOs)</h2>
+        <p>Emerging refrigerants with lower global warming potential compared to HFCs.</p>
+    </div>
+</div>
+<!-- Card 17: Bromofluorocarbons (BFCs) -->
+<div class="card" onclick="openModal('bfc-modal')">
+    <div class="card-image" style="background-image: url('https://www.shutterstock.com/image-illustration/octafluoropropane-perfluorocarbon-molecule-3d-rendering-600nw-2416580687.jpg');"></div>
+    <div class="card-content">
+        <h2>Bromofluorocarbons (BFCs)</h2>
+        <p>Synthetic compounds used in fire suppression and as solvents in various industries.</p>
+    </div>
+</div>
+
+<!-- Card 18: Carbonyl Sulfide (COS) -->
+<div class="card" onclick="openModal('cos-modal')">
+    <div class="card-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXF6xg-2r0WbOe6COgRrNd2dZ9EK9bm0YwrQ&s');"></div>
+    <div class="card-content">
+        <h2>Carbonyl Sulfide (COS)</h2>
+        <p>Produced naturally by oceans and volcanoes, and used industrially as a chemical reagent.</p>
+    </div>
+</div>
+
+<!-- Card 19: Nitrogen Oxides (NOₓ) -->
+<div class="card" onclick="openModal('nox-modal')">
+    <div class="card-image" style="background-image: url('https://c8.alamy.com/comp/2AN30JW/nitric-oxide-no-nitrogen-dioxide-no2-and-nitrous-oxide-n2o-laughing-gas-molecule-models-and-chemical-formulas-ball-and-stick-models-2AN30JW.jpg');"></div>
+    <div class="card-content">
+        <h2>Nitrogen Oxides (NOₓ)</h2>
+        <p>Emitted from vehicle engines, power plants, and industrial activities.</p>
+    </div>
+</div>
+
+<!-- Card 20: Methane Hydrates -->
+<div class="card" onclick="openModal('methane-hydrates-modal')">
+    <div class="card-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlHYX9m6kOVCnKDgc7QS9mghU3vEDX97KYbQ&s');"></div>
+    <div class="card-content">
+        <h2>Methane Hydrates</h2>
+        <p>Solid ice-like structures containing methane, found in ocean sediments and permafrost regions.</p>
+    </div>
+</div>
+
+
+        </div>
+    </main>
+
+    <!-- Modals for Detailed Information -->
+
+    <!-- Existing Modals -->
+
+    <!-- Modal 1: Carbon Dioxide -->
+    <div id="co2-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('co2-modal')">&times;</span>
+            <h2>Carbon Dioxide (CO₂)</h2>
+            <p><strong>Overview:</strong> Carbon dioxide is one of the most significant greenhouse gases, contributing to global warming and climate change.</p>
+            <h3>Sources of CO₂</h3>
+            <ul>
+                <li>Burning of fossil fuels (coal, oil, natural gas)</li>
+                <li>Deforestation and land use changes</li>
+                <li>Industrial processes</li>
+                <li>Natural sources (volcanoes, respiration)</li>
+            </ul>
+            <h3>Impact:</h3>
+            <p>Increased CO₂ levels lead to higher global temperatures, melting ice caps, rising sea levels, and extreme weather events.</p>
+        </div>
+    </div>
+
+    <!-- Modal 2: Methane -->
+    <div id="methane-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('methane-modal')">&times;</span>
+            <h2>Methane (CH₄)</h2>
+            <p><strong>Overview:</strong> Methane is a potent greenhouse gas with a higher global warming potential than CO₂ over a short timeframe.</p>
+            <h3>Sources of Methane</h3>
+            <ul>
+                <li>Agricultural practices (rice paddies, livestock)</li>
+                <li>Natural gas production and distribution</li>
+                <li>Landfills</li>
+                <li>Wetlands</li>
+            </ul>
+            <h3>Impact:</h3>
+            <p>Methane contributes to the formation of ground-level ozone and has a significant short-term impact on climate change.</p>
+        </div>
+    </div>
+
+    <!-- Modal 3: Nitrous Oxide -->
+    <div id="nitrous-oxide-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('nitrous-oxide-modal')">&times;</span>
+            <h2>Nitrous Oxide (N₂O)</h2>
+            <p><strong>Overview:</strong> Nitrous oxide is a long-lived greenhouse gas with a significant impact on the ozone layer.</p>
+            <h3>Sources of N₂O</h3>
+            <ul>
+                <li>Agricultural activities (use of synthetic fertilizers)</li>
+                <li>Industrial processes</li>
+                <li>Combustion of fossil fuels and biomass</li>
+                <li>Natural sources (soils and oceans)</li>
+            </ul>
+            <h3>Impact:</h3>
+            <p>Nitrous oxide contributes to both climate change and ozone layer depletion, affecting ecosystems and human health.</p>
+        </div>
+    </div>
+
+    <!-- Modal 4: Fluorinated Gases -->
+    <div id="fluorinated-gases-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('fluorinated-gases-modal')">&times;</span>
+            <h2>Fluorinated Gases</h2>
+            <p><strong>Overview:</strong> Fluorinated gases are synthetic, non-natural greenhouse gases used in various industrial applications.</p>
+            <h3>Types of Fluorinated Gases</h3>
+            <ul>
+                <li>Hydrofluorocarbons (HFCs)</li>
+                <li>Perfluorocarbons (PFCs)</li>
+                <li>Sulfur hexafluoride (SF₆)</li>
+                <li>Nitrogen trifluoride (NF₃)</li>
+            </ul>
+            <h3>Impact:</h3>
+            <p>These gases have high global warming potentials and long atmospheric lifetimes, making them significant contributors to climate change.</p>
+        </div>
+    </div>
+
+    <!-- New Modals -->
+
+    <!-- Modal 5: Water Vapor -->
+    <div id="water-vapor-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('water-vapor-modal')">&times;</span>
+            <h2>Water Vapor (H₂O)</h2>
+            <p><strong>Overview:</strong> Water vapor is the most abundant greenhouse gas in the atmosphere and plays a crucial role in the Earth's climate system.</p>
+            <h3>Sources of Water Vapor</h3>
+            <ul>
+                <li>Evaporation from oceans, lakes, and rivers</li>
+                <li>Transpiration from plants</li>
+                <li>Respiration from living organisms</li>
+                <li>Direct injection from human activities (e.g., industrial processes)</li>
+            </ul>
+            <h3>Impact:</h3>
+            <p>Water vapor amplifies the greenhouse effect by trapping heat in the atmosphere. It acts as a feedback mechanism, intensifying warming caused by other greenhouse gases.</p>
+        </div>
+    </div>
+
+    <!-- Modal 6: Ozone -->
+    <div id="ozone-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('ozone-modal')">&times;</span>
+            <h2>Ozone (O₃)</h2>
+            <p><strong>Overview:</strong> Ozone exists in both the troposphere and stratosphere, with different roles in each layer.</p>
+            <h3>Sources of Ozone</h3>
+            <ul>
+                <li>Tropospheric Ozone:
+                    <ul>
+                        <li>Formation through chemical reactions between pollutants (NOₓ and VOCs) in the presence of sunlight</li>
+                        <li>Emissions from industrial facilities, vehicles, and power plants</li>
+                    </ul>
+                </li>
+                <li>Stratospheric Ozone:
+                    <ul>
+                        <li>Produced naturally by the interaction of UV radiation with molecular oxygen</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Impact:</h3>
+            <p>
+                <strong>Tropospheric Ozone:</strong> Acts as a greenhouse gas, contributing to warming, and is harmful to human health and vegetation.
+                <br>
+                <strong>Stratospheric Ozone:</strong> Protects life on Earth by absorbing the majority of the sun's harmful ultraviolet radiation.
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal 7: Carbon Monoxide -->
+    <div id="carbon-monoxide-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('carbon-monoxide-modal')">&times;</span>
+            <h2>Carbon Monoxide (CO)</h2>
+            <p><strong>Overview:</strong> Carbon monoxide is a colorless, odorless gas that indirectly affects the greenhouse effect.</p>
+            <h3>Sources of CO</h3>
+            <ul>
+                <li>Incomplete combustion of fossil fuels (vehicles, generators, heaters)</li>
+                <li>Wildfires and biomass burning</li>
+                <li>Industrial processes</li>
+                <li>Residential heating and cooking appliances</li>
+            </ul>
+            <h3>Impact:</h3>
+            <p>
+                While carbon monoxide itself is not a direct greenhouse gas, it affects the concentration of other greenhouse gases like methane and tropospheric ozone by influencing atmospheric chemistry.
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal 8: Sulfur Dioxide -->
+    <div id="sulfur-dioxide-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('sulfur-dioxide-modal')">&times;</span>
+            <h2>Sulfur Dioxide (SO₂)</h2>
+            <p><strong>Overview:</strong> Sulfur dioxide is produced by volcanic eruptions and industrial processes, contributing to climate change and air pollution.</p>
+            <h3>Sources of SO₂</h3>
+            <ul>
+                <li>Burning of fossil fuels containing sulfur (coal, oil)</li>
+                <li>Smelting of mineral ores that contain sulfur</li>
+                <li>Volcanic eruptions</li>
+                <li>Industrial manufacturing processes</li>
+            </ul>
+            <h3>Impact:</h3>
+            <p>
+                Sulfur dioxide contributes to the formation of fine particulate matter and acid rain, which can harm ecosystems, human health, and infrastructure. It also has a cooling effect by reflecting sunlight back into space, which can mask some of the warming caused by other greenhouse gases.
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal 9: Black Carbon -->
+    <div id="black-carbon-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('black-carbon-modal')">&times;</span>
+            <h2>Black Carbon</h2>
+            <p><strong>Overview:</strong> Black carbon is a component of particulate matter that absorbs sunlight, contributing to atmospheric warming.</p>
+            <h3>Sources of Black Carbon</h3>
+            <ul>
+                <li>Incomplete combustion of fossil fuels, biofuels, and biomass</li>
+                <li>Diesel engines and other heavy-duty vehicles</li>
+                <li>Residential heating and cooking</li>
+                <li>Wildfires and agricultural burning</li>
+            </ul>
+            <h3>Impact:</h3>
+            <p>
+                Black carbon absorbs solar radiation, leading to atmospheric warming. When deposited on snow and ice, it reduces their albedo (reflectivity), accelerating melting. Additionally, black carbon is harmful to human health, causing respiratory and cardiovascular issues.
+            </p>
+        </div>
+    </div>
+    <!-- New Modals -->
+
+<!-- Modal 10: Chlorofluorocarbons (CFCs) -->
+<div id="cfc-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('cfc-modal')">&times;</span>
+        <h2>Chlorofluorocarbons (CFCs)</h2>
+        <p><strong>Overview:</strong> CFCs are synthetic compounds once widely used in refrigeration, air conditioning, and aerosol propellants. They are potent greenhouse gases and contribute to ozone layer depletion.</p>
+        <h3>Sources of CFCs</h3>
+        <ul>
+            <li>Refrigeration and air conditioning systems</li>
+            <li>Aerosol spray propellants</li>
+            <li>Foam blowing agents</li>
+            <li>Solvents for cleaning electronic components</li>
+        </ul>
+        <h3>Impact:</h3>
+        <p>CFCs have a high global warming potential and can remain in the atmosphere for decades. They also break down ozone molecules, leading to thinning of the ozone layer, which increases harmful UV radiation reaching Earth.</p>
+    </div>
+</div>
+
+<!-- Modal 11: Hydrofluorocarbons (HFCs) -->
+<div id="hfc-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('hfc-modal')">&times;</span>
+        <h2>Hydrofluorocarbons (HFCs)</h2>
+        <p><strong>Overview:</strong> HFCs are synthetic greenhouse gases used as substitutes for CFCs and HCFCs in refrigeration, air conditioning, and other applications. They do not deplete the ozone layer but have significant global warming potential.</p>
+        <h3>Sources of HFCs</h3>
+        <ul>
+            <li>Refrigeration and air conditioning systems</li>
+            <li>Foam blowing agents</li>
+            <li>Aerosol propellants</li>
+            <li>Fire extinguishing systems</li>
+        </ul>
+        <h3>Impact:</h3>
+        <p>HFCs contribute to global warming with a higher global warming potential than CO₂. Efforts are being made globally to reduce HFC emissions through regulations and the adoption of alternative technologies.</p>
+    </div>
+</div>
+
+<!-- Modal 12: Perfluorocarbons (PFCs) -->
+<div id="pfc-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('pfc-modal')">&times;</span>
+        <h2>Perfluorocarbons (PFCs)</h2>
+        <p><strong>Overview:</strong> PFCs are synthetic gases used in various industrial applications, including aluminum production and semiconductor manufacturing. They have extremely high global warming potentials.</p>
+        <h3>Sources of PFCs</h3>
+        <ul>
+            <li>Aluminum smelting</li>
+            <li>Semiconductor manufacturing</li>
+            <li>Solvents and aerosol propellants</li>
+            <li>Medical applications (e.g., liquid ventilation)</li>
+        </ul>
+        <h3>Impact:</h3>
+        <p>PFCs are long-lived in the atmosphere and have a high capacity to trap heat, making them significant contributors to climate change despite their low concentrations.</p>
+    </div>
+</div>
+
+<!-- Modal 13: Sulfur Hexafluoride (SF₆) -->
+<div id="sf6-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('sf6-modal')">&times;</span>
+        <h2>Sulfur Hexafluoride (SF₆)</h2>
+        <p><strong>Overview:</strong> SF₆ is an inorganic, synthetic gas used primarily as an insulating and arc-quenching agent in electrical equipment. It has an exceptionally high global warming potential.</p>
+        <h3>Sources of SF₆</h3>
+        <ul>
+            <li>High-voltage circuit breakers</li>
+            <li>Switchgear and transformers</li>
+            <li>Magnesium production</li>
+            <li>Welding applications</li>
+        </ul>
+        <h3>Impact:</h3>
+        <p>SF₆ is one of the most potent greenhouse gases known, with a global warming potential approximately 23,500 times that of CO₂ over a 100-year period. Its long atmospheric lifetime exacerbates its impact on climate change.</p>
+    </div>
+</div>
+
+<!-- Modal 14: Nitrogen Trifluoride (NF₃) -->
+<div id="nf3-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('nf3-modal')">&times;</span>
+        <h2>Nitrogen Trifluoride (NF₃)</h2>
+        <p><strong>Overview:</strong> NF₃ is a synthetic gas used in the manufacturing of liquid crystal displays and photovoltaic cells. It has a high global warming potential.</p>
+        <h3>Sources of NF₃</h3>
+        <ul>
+            <li>Manufacturing of LCD screens and TVs</li>
+            <li>Production of solar panels</li>
+            <li>Semiconductor fabrication</li>
+            <li>Cleaning agents in electronics manufacturing</li>
+        </ul>
+        <h3>Impact:</h3>
+        <p>NF₃ is a potent greenhouse gas with a global warming potential significantly higher than CO₂. Although its atmospheric concentration is lower, its impact is amplified by its strong heat-trapping ability.</p>
+    </div>
+</div>
+
+<!-- Modal 15: Hydrochlorofluorocarbons (HCFCs) -->
+<div id="hcfc-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('hcfc-modal')">&times;</span>
+        <h2>Hydrochlorofluorocarbons (HCFCs)</h2>
+        <p><strong>Overview:</strong> HCFCs are partially synthetic compounds used as transitional substitutes for CFCs in refrigeration and air conditioning. They have lower ozone-depleting potential but still contribute to global warming.</p>
+        <h3>Sources of HCFCs</h3>
+        <ul>
+            <li>Refrigeration and air conditioning systems</li>
+            <li>Foam blowing agents</li>
+            <li>Aerosol propellants</li>
+            <li>Solvents for cleaning electronic components</li>
+        </ul>
+        <h3>Impact:</h3>
+        <p>While HCFCs are less harmful to the ozone layer compared to CFCs, they still possess significant global warming potentials and are being phased out under international agreements like the Montreal Protocol.</p>
+    </div>
+</div>
+
+<!-- Modal 16: Hydrofluoroolefins (HFOs) -->
+<div id="hfo-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('hfo-modal')">&times;</span>
+        <h2>Hydrofluoroolefins (HFOs)</h2>
+        <p><strong>Overview:</strong> HFOs are a new class of refrigerants designed to replace HFCs, offering lower global warming potentials and reduced environmental impact.</p>
+        <h3>Sources of HFOs</h3>
+        <ul>
+            <li>Refrigeration and air conditioning systems</li>
+            <li>Foam blowing agents</li>
+            <li>Aerosol propellants</li>
+            <li>Solvents in industrial applications</li>
+        </ul>
+        <h3>Impact:</h3>
+        <p>HFOs provide a more environmentally friendly alternative to HFCs, with significantly lower global warming potentials. Their adoption is encouraged to mitigate climate change while maintaining essential cooling and manufacturing processes.</p>
+    </div>
+</div>
+<!-- Modal 17: Bromofluorocarbons (BFCs) -->
+<div id="bfc-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('bfc-modal')">&times;</span>
+        <h2>Bromofluorocarbons (BFCs)</h2>
+        <p><strong>Overview:</strong> BFCs are synthetic compounds used primarily in fire suppression systems and as solvents in various industrial processes. They are potent greenhouse gases and contribute to ozone layer depletion.</p>
+        <h3>Sources of BFCs</h3>
+        <ul>
+            <li>Fire suppression systems in aircraft and industrial facilities</li>
+            <li>Solvents in electronics manufacturing</li>
+            <li>Cleaning agents for sensitive equipment</li>
+            <li>Foam blowing agents</li>
+        </ul>
+        <h3>Impact:</h3>
+        <p>BFCs have high global warming potentials and long atmospheric lifetimes, making them significant contributors to climate change. Additionally, they are involved in the breakdown of ozone molecules, leading to thinning of the ozone layer.</p>
+    </div>
+</div>
+
+<!-- Modal 18: Carbonyl Sulfide (COS) -->
+<div id="cos-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('cos-modal')">&times;</span>
+        <h2>Carbonyl Sulfide (COS)</h2>
+        <p><strong>Overview:</strong> COS is a colorless gas naturally produced by oceans, volcanoes, and vegetation. It is also used industrially as a chemical reagent and in the production of chemicals like methionine.</p>
+        <h3>Sources of COS</h3>
+        <ul>
+            <li>Natural emissions from oceans and volcanoes</li>
+            <li>Industrial production of methionine and other chemicals</li>
+            <li>Use as a reagent in organic synthesis</li>
+            <li>Fertilizer application in agriculture</li>
+        </ul>
+        <h3>Impact:</h3>
+        <p>While COS has a shorter atmospheric lifetime compared to some other greenhouse gases, it contributes to the greenhouse effect by trapping heat in the atmosphere. Its role in ozone chemistry also affects atmospheric composition.</p>
+    </div>
+</div>
+
+<!-- Modal 19: Nitrogen Oxides (NOₓ) -->
+<div id="nox-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('nox-modal')">&times;</span>
+        <h2>Nitrogen Oxides (NOₓ)</h2>
+        <p><strong>Overview:</strong> NOₓ refers to a group of gases including nitric oxide (NO) and nitrogen dioxide (NO₂). These gases are primarily emitted from combustion processes and play a role in both air pollution and the greenhouse effect.</p>
+        <h3>Sources of NOₓ</h3>
+        <ul>
+            <li>Vehicle engines (especially diesel engines)</li>
+            <li>Power plants and industrial boilers</li>
+            <li>Residential heating systems</li>
+            <li>Biomass burning and wildfires</li>
+        </ul>
+        <h3>Impact:</h3>
+        <p>NOₓ contributes to the formation of ground-level ozone, a potent greenhouse gas. It also plays a role in the formation of fine particulate matter, which has adverse health effects. Additionally, NOₓ can lead to acid rain, harming ecosystems.</p>
+    </div>
+</div>
+
+<!-- Modal 20: Methane Hydrates -->
+<div id="methane-hydrates-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('methane-hydrates-modal')">&times;</span>
+        <h2>Methane Hydrates</h2>
+        <p><strong>Overview:</strong> Methane hydrates are ice-like structures that trap methane molecules within a lattice of water ice. They are found in ocean sediments and permafrost regions and are considered a significant potential source of natural gas.</p>
+        <h3>Sources of Methane Hydrates</h3>
+        <ul>
+            <li>Marine sediments on continental shelves</li>
+            <li>Permafrost regions in polar areas</li>
+            <li>Deep-sea environments</li>
+            <li>Subsea permafrost</li>
+        </ul>
+        <h3>Impact:</h3>
+        <p>Methane hydrates represent a large reservoir of methane, a potent greenhouse gas. If destabilized due to warming temperatures, they can release significant amounts of methane into the atmosphere, exacerbating climate change. Additionally, their destabilization can lead to submarine landslides and affect oceanic ecosystems.</p>
+    </div>
+</div
+
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Greenhouse Gases Info. All rights reserved. to Vaibhav Adhav</p>
+</footer>
+
+    <!-- JavaScript for Modal Functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
